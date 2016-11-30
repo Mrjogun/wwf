@@ -19,8 +19,22 @@
 		<div class="w3-center">WWF</div>
 	</div>
 </div>
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-	<div id="map" style="width: 400px; height: 400px"></div>
+<table>
+<%	for(int i=0;i<46;i++){%>
+<tr>
+<button onclick="initMap('Fira Montjuïc Fira Gran Via LHospitalet, Barcelona, Spain')" value="hello" />
+<div class="w3-main w3-content" style="max-width:1200px;margin-top:100px">
+	<div class="w3-quarter">
+		<img src="./img/fest_img/fest_img_<%=i+1%>.jpg" alt="fest_name" style="width:100%">
+	</div>
+	<div>
+		<%= i+1 %>번째 이미지 입니다.
+	</div>
 </div>
+</form>
+</tr>
+<%	} %>
+</table>
+	<div id="map" style="width: 100%; height: 100px"></div>
 </body>
 </html>
