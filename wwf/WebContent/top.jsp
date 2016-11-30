@@ -4,12 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>WWF</title>
+<title>Insert title here</title>
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
-<script type="text/javascript" src="./maps.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc6nmQ1eR8JJ2Jv45fkMXAKmjzyK1jNSs&signed_in=true&callback=initMap"
-	async defer></script>
 </head>
 <body>
 <div class="w3-top">
@@ -18,9 +15,6 @@
 		<div class="w3-right"><img src="./ic_search_black_24dp_2x.png" /></div>
 		<div class="w3-center">WWF</div>
 	</div>
-</div>
-<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
-	<div id="map" style="width: 400px; height: 400px"></div>
 </div>
 </body>
 </html>
