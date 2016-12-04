@@ -1,5 +1,5 @@
-function initMap(address) {
-	var map = new google.maps.Map(document.getElementById('map'), {
+function initMap(address,num) {
+	var map = new google.maps.Map(document.getElementById('map'+num), {
 		zoom: 9,
 	});
 	var geocoder = new google.maps.Geocoder();

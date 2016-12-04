@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="java.sql.*" %>
-<jsp:useBean id="festlist" class="java.util.ArrayList" scope="request" />
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -26,16 +25,22 @@
 </head>
 <body>
 <%
-	
+
 	try {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		Connection conn = DriverManager.getConnection(
 			"jdbc:oracle:thin:@203.249.22.52:2013:xe", "system" , "admin");
-        
+		
+		String sql = "";
+		
 		Statement stmt = conn.createStatement();
-		String sql = "select * from musicFest NATURAL join place order by fest_date desc";
+		if(request.getParameter("genre") != null && request.getParameter("persent") != null){
+			sql = "select * from table(getPerMFInfo('"+request.getParameter("genre")+"',"+request.getParameter("persent")+")) NATURAL join place order by fest_id desc";
+		}else if(request.getParameter("start_date")!=null && request.getParameter("end_date")!=null &&request.getParameter("genre")!=null){
+			sql = "select * from table(getVaMFInfo('"+request.getParameter("start_date")+"','"+request.getParameter("end_date")+"','"+request.getParameter("genre")+"')) NATURAL join place order by fest_id desc";
+		}
+			
 		ResultSet rs = stmt.executeQuery(sql);
-
 %>
 	<center>
 		<div class="w3-top" >
@@ -47,12 +52,9 @@
 				<div class="w3-center"><a href="./index.jsp" style="text-decoration:none">WWF</a></div>
 			</div>
 		</div>
-
 		<div class="w3-main w3-dark-grey w3-content w3-padding-xlarge" style="width:100%;max-width:1200px;margin-top:60px">
 			<ul class="w3-ul w3-hoverable">
-<%
-		while(rs.next()){
-%>
+		<%while(rs.next()){%>
 			<div class="w3-accordion">
 				<button onclick='accordion("fest<%= rs.getInt("fest_id") %>");javascript:initMap("<%= rs.getString("con_name")
 					+ rs.getString("detail_adr") %>",<%=rs.getInt("fest_id")%>);' class="w3-btn w3-dark-grey" style="width:100%;max-width:1200px">
@@ -73,15 +75,14 @@
 			</div>
 <%
 		}
-		rs.close();
 		stmt.close();
 		conn.close();
     } catch (SQLException e) {
         System.out.println("커넥션 실패");
     } 
 %>
-				</ul>
-			</div>	
-		</center>
-	</body>
+			</ul>
+		</div>
+	</center>
+</body>
 </html>
