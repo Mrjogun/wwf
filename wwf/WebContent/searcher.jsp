@@ -37,10 +37,16 @@
 		if(request.getParameter("genre") != null && request.getParameter("persent") != null){
 			sql = "select * from table(getPerMFInfo('"+request.getParameter("genre")+"',"+request.getParameter("persent")+")) NATURAL join place order by fest_id desc";
 		}else if(request.getParameter("start_date")!=null && request.getParameter("end_date")!=null &&request.getParameter("genre")!=null){
+<<<<<<< HEAD
 			sql = "select * from table(getVaMFInfo(to_date('"+request.getParameter("start_date")+"','yyyy-mm-dd'), to_date('"+request.getParameter("end_date")+"','yyyy-mm-dd'),'"+request.getParameter("genre")+"')) NATURAL join place order by fest_id desc";
 		}
 		
 		System.out.println(sql);
+=======
+			sql = "select * from table(getVaMFInfo('"+request.getParameter("start_date")+"','"+request.getParameter("end_date")+"','"+request.getParameter("genre")+"')) NATURAL join place order by fest_id desc";
+		}
+			
+>>>>>>> refs/remotes/origin/master
 		ResultSet rs = stmt.executeQuery(sql);
 %>
 	<center>
