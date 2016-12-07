@@ -50,7 +50,7 @@
 			<!-- 열려라 참깨! -->
 			<div class="w3-accordion">
 				<button onclick='accordion("문");' class="w3-btn w3-dark-grey" style="width:100%;max-width:1200px">
-					<!-- 솰라솰라 -->똥싸라
+					<!-- 솰라솰라 -->똥싸라흠....
 				</button>
 				<div id="문" class="w3-accordion-content w3-container">
 					<!-- 음하하하하하하하하 -->
