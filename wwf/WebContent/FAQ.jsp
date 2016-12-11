@@ -137,7 +137,7 @@
 					  <li>다운로드 페스티벌과 라인업이 많이 겹치는 것 같은데, 다른  점이 있나요? </li>
 					</ol>
 					<p align="left">다운로드는 러닝타임이 무지 짧은 대신 스테이지 숫자에 비해 라인업 수가  많습니다. 어차피 밴드들 유럽에서만 수십회 투어를 진행하기 때문에 어지간 페스티벌들은 다 라인업이 겹치게  되어 있습니다. 하지만 스테이지가 많고, 끊임없이 좋은 공연들이  있기 때문에 체력이나 라인업 겹침으로 못보는 팀들이 분명 존재하게 됩니다. 그렇기 때문에 스테이지 갯수와  스테이지간의 거리를 확인해야 합니다. 물리적으로 이동 불가능한 경우가 있을 수 있습니다. (ex. 올해 레드핫칠리페퍼스와 테임임팔라) 그러니 러닝타임, 타임테이블, 페스티벌 분위기 등을 종합적으로 고려하여 페스티벌을  선정하는 것이 좋습니다. </p>
-					<p align="left"><img src="img/FAQ/2-5.jpg" alt="2" width="400px" height="261px" border="0" /></p>
+					<p align="left"><img src="img/FAQ/2-5.jpg" alt="2" style="width:100%" border="0" /></p>
 					<ol>
 					  <li>스테이지의 숫자와 위치를 알려주세요. </li>
 					</ol>
@@ -279,13 +279,13 @@
 					<p align="left">7.    외국은 공연 취소 수수료가 어떤가요? <br />
 					  보통 티켓을 그냥 날려야 하지만, 티켓  보험(3~10유로)을 지급하면 전액 환불이 가능합니다. </p>
 					<p align="left">8.    해외공연은 좌석이나 입장순서가 어떤가요? <br />
-					  <img src="img/FAQ/2-8-1.jpg" alt="4" width="658" height="268" border="0" /> <br />
+					  <img src="img/FAQ/2-8-1.jpg" alt="4" style="width:100%" border="0" /> <br />
 					  위 예시는 입장 게이트가 다른 경우입니다. 앞쪽 게이트부터 채웁니다. <br />
-					  <img src="img/FAQ/2-8-2.jpg" alt="6" width="642" height="262" border="0" /> <br />
+					  <img src="img/FAQ/2-8-2.jpg" alt="6" style="width:100%" border="0" /> <br />
 					  좌석의 경우입니다. <br />
-					  <img src="img/FAQ/2-8-3.jpg" alt="8" width="515" height="183" border="0" /> <br />
+					  <img src="img/FAQ/2-8-3.jpg" alt="8" style="width:100%" border="0" /> <br />
 					  테이블을 잡는 경우입니다. </p>
-					<img src="img/FAQ/2-8-4.jpg" alt="10" width="538" height="193" border="0" /> <br />
+					<img src="img/FAQ/2-8-4.jpg" alt="10" style="width:100%" border="0" /> <br />
 					  스탠딩입니다. 입장 번호는  없습니다. </p>
 					얼리엑세스, hot티켓, 프리미엄티켓, VIP티켓 이런식으로 아예 티켓을 비싸게 받거나, 구매조건이 연회비있는 오피셜 팬클럽 가입자만 되는 경우도 있습니다. </p>
 				</div>

@@ -39,7 +39,7 @@
 				<div class="w3-right w3-hover-text-grey">
 					<a href="./index.jsp"><i class="fa fa-home" ></i></a>
 				</div>
-				<div class="w3-center">SEACH</div>
+				<div class="w3-center">SEARCH</div>
 			</div>
 		</div>
 	
