@@ -7,7 +7,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
 		<script>
 		function accordion(id) {
     		var x = document.getElementById(id);
@@ -32,17 +31,17 @@
 		ResultSet rs = stmt.executeQuery(sql);
 %>
 		<center>
-			<div class="w3-top" >
-				<div class="w3-dark-grey w3-xlarge w3-padding-xlarge" style="width:100%;max-width:1200px;margin:auto">
-					<div class="w3-opennav w3-left" onclick="w3_open()">
-						<i class="fa fa-bars"></i>
-					</div>
-					<div class="w3-right w3-hover-text-grey">
-						<a href="./index.jsp"><i class="fa fa-home" ></i></a>
-					</div>
-					<div class="w3-center">WWF</div>
+		<div class="w3-top" >
+			<div class="w3-dark-grey w3-xlarge w3-padding-xlarge" style="width:100%;hegiht:auto;max-width:1200px;margin:auto">
+				<div class="w3-opennav w3-left" onclick="w3_open()">
+					<a href="./menu.html"><i class="fa fa-bars"></i></a>
 				</div>
+				<div class="w3-right w3-hover-text-grey">
+					<a href="./index.jsp"><i class="fa fa-home" ></i></a>
+				</div>
+				<div class="w3-center">SEACH</div>
 			</div>
+		</div>
 	
 			<div class="w3-main w3-dark-grey w3-content w3-padding-xlarge" style="width:100%;max-width:1200px;margin-top:60px">
 			<div class="w3-accordion">
@@ -51,7 +50,7 @@
 				</button>
 				<div id="genre_per" class="w3-accordion-content w3-container">
 					<br>
-					<form name="genre_per" action="searcher.jsp" method="post">
+					<form name="genre_per" action="search_view.jsp" method="post">
 						<select name="genre">
 							<% while(rs.next()){ %>
 							<option value="<%= rs.getString(1) %>"><%= rs.getString(1) %></option>
