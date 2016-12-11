@@ -68,8 +68,11 @@
 				</button>
 				<div id="fest<%= rs.getInt("fest_id") %>" class="w3-accordion-content w3-container">
 					<div class="url">
-						<button class="w3-btn w3-light-grey w3-round-large"><a href=<%=rs.getString("ent_url")%>>출연진</a></button>
-						<button class="w3-btn w3-light-grey w3-round-large"><a href=<%=rs.getString("des_url")%>>티켓판매처</a></button>
+					<div class="url w3-center">
+						<button class="w3-btn w3-light-grey w3-round-large" style="width:30%"><a href=<%=rs.getString("ent_url")%>>출연진</a></button>
+						<button class="w3-btn w3-light-grey w3-round-large" style="width:30%"><a href=<%=rs.getString("des_url")%>>티켓판매</a></button>
+						<button class="w3-btn w3-light-grey w3-round-large" style="width:30%"><a href="./detail_view.jsp?fest_id=<%= rs.getInt("fest_id") %>" style="text-decoration:none">상세정보</a></button>
+					</div>
 					</div>
 					<br>
 					<div id="map<%=rs.getInt("fest_id")%>" style="width: 100%; height: 300px;max-width:1200px"></div>
